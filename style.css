@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url('img/bg.jpg');
-    overflow-y: hidden;
+    overflow: hidden;
 }
 #btn-audio{
     padding: 0;
