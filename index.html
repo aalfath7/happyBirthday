@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card | Annisa</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <button id="btn-audio">
+        <i id="btn-play" class="bi bi-volume-up-fill"></i>
+        <i id="btn-pause" class="bi bi-volume-mute-fill"></i>
+    </button>
+
+    
+    <main>
+        <div id="gif-image">
+            <img src="img\gif2.gif" alt="">
+        </div>
+
+        <header>
+            <h1>Happy Birthday</h1>
+            <h2>Annisa Dwi Yanti</h2>
+        </header>
+
+        <div id="your-photo">
+            <img src="img\your-photo.jpg" alt="">
+        </div>
+
+        <div id="text">
+            <p>Happy birthday! Hopefully you will always be healthy and happy, also being a good person, humble, always grateful. Enjoy your special day! Do all your best so your dreams will come true. <br><br>From Your Friends ~Farhan</p>
+        </div>
+
+        <div id="btn-gift">
+            <a href="#container">Click Here!</a>
+        </div>
+    </main>
+
+    <div id="container">
+        <div id="gift">
+            <h1>Tabarokallah Ukhti</h1>
+            <img src="img\your-gift.jpg" alt="">
+            <a href="#top">back</a>
+        </div>
+    </div>
+
+
+    <!-- hidden autoplay loop  -->
+    <audio hidden>
+        <source src="Happy-Birthday-To-You.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const audio = document.querySelector('audio');
+        const btnPlay = document.getElementById('btn-play');
+        const btnPause = document.getElementById('btn-pause');
+        btnPlay.addEventListener('click', function(event){
+            event.preventDefault();
+            audio.pause();
+            btnPause.style.display = 'block';
+            btnPlay.style.display = 'none';
+        });
+        btnPause.addEventListener('click', function(event){
+            event.preventDefault();
+            audio.play();
+            btnPause.style.display = 'none';
+            btnPlay.style.display = 'block';           
+        });
+        audio.loop();
+    </script>
+</body>
+</html>

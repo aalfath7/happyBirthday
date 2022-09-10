@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('img/bg.jpg');
+    overflow-y: hidden;
+}
+#btn-audio{
+    padding: 0;
+    border: none;
+}
+
+#btn-play, 
+#btn-pause{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0.1em;
+    font-size: 3em;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    box-shadow: 0 1px px 0 rgba(0,0,0,0.1);
+}
+
+#btn-play{
+    display: none;
+}
+
+#gif-image{
+    display: flex;
+    justify-content: center;
+}
+
+#gif-image img{
+    width: 40%;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    background-color: cornsilk;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 1em;
+    text-align: justify;
+}
+
+@media (min-width: 656px){
+    main{
+        width: 50em;
+        font-size: 0.7em;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1500px){
+    main{
+        width: 40em;
+        margin: 0 auto;
+    }
+}
+
+#your-photo{
+    display: flex;
+    justify-content: center;
+}
+
+#your-photo img{
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main #text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px){
+    main #text{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    background-color: orange;
+    border-radius: 1em;
+}
+
+#btn-gift{
+    display: flex;
+    justify-content: center;
+    padding: 1em 1em 3em;
+}
+
+#container{
+    margin-top: 200em;
+    padding: 1em 0;
+}
+
+#gift{
+    text-align: center;
+    margin: 1em 1em;
+    padding: 1em 1em;
+    background-color: cornsilk;
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 1em;
+}
+
+#gift img{
+    width: 80%;
+    border-radius: 2em;
+}
+
+#gift a{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    width: 5rem;
+    margin: 1em auto;
+    border-radius: 1em;
+}
+
+@media (min-width: 656px){
+    #container{
+        width: 50em;
+        font-size: 0.6em;
+        margin: 200em auto;
+    }
+}
+
